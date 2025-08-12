@@ -1,0 +1,7 @@
+$TTL 86400
+@       IN      SOA     dns-server.shwibzka.shirahata. root.shwibzka.shirahata. ( 1 3600 1800 604800 86400 )
+@       IN      NS      dns-server.shwibzka.shirahata.
+
+dns-server          IN      A       192.168.10.1
+www                 IN      A       192.168.10.4
+shwibzka.shirahata. IN      A       192.168.10.4

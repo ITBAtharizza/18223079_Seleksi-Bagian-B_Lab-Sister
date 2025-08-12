@@ -1,0 +1,9 @@
+[Unit]
+Description=Simple Python Reverse Proxy
+
+[Service]
+ExecStart=/usr/bin/python /home/test/reverse_proxy.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
