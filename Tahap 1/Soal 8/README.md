@@ -4,6 +4,14 @@
 gcc -O3 -o kali kali.c
 ```
 ---
+## Penggunaan
+```bash
+./kali
+<input angka pertama>
+<input angka kedua>
+<output hasil>
+```
+---
 ## Implementasi Algoritma
 Source code menggunakan algoritma NTT (Number Theoretic Transform) dan Barret Reduction.
 
