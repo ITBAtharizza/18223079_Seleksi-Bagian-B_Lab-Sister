@@ -8,6 +8,8 @@
 #include "../../header/process/scheduler.h"
 #include "../../header/stdlib/string.h"
 
+struct FramebufferState framebuffer_state;
+
 void activate_keyboard_interrupt(void) {
     out(PIC1_DATA, in(PIC1_DATA) & ~(1 << IRQ_KEYBOARD));
 }
@@ -47,8 +49,8 @@ void pic_remap(void) {
 // Syscall handler for clearing the framebuffer.
 void syscall_clear_screen(void) {
     framebuffer_clear();
-    framebuffer_state.cur_col = 0;
-    framebuffer_state.cur_row = 0;
+    framebuffer_state.col = 0;
+    framebuffer_state.row = 0;
 }
 
 // Syscall handler for reading the RTC.
