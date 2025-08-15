@@ -73,11 +73,12 @@ struct FAT32DriverRequest {
     char      ext[3];
     uint32_t  parent_cluster_number;
     uint32_t  buffer_size;
+    uint32_t  self_cluster_number;
 } __attribute__((packed));
 
 uint32_t cluster_to_lba(uint32_t cluster);
 
-void init_directory_table(struct FAT32DirectoryTable *dir_table, char *name, uint32_t parent_dir_cluster);
+void init_directory_table(struct FAT32DirectoryTable *dir_table, char *name, uint32_t parent_dir_cluster, uint32_t self_cluster_number);
 
 bool is_empty_storage(void);
 
