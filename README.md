@@ -1,4 +1,4 @@
-# Seleksi Bagian B Tahap 1 (b1-v1.0) - Lab Sister
+# Seleksi Bagian B Tahap 1 (b1-v1.2) - Lab Sister
 
 ## Deskripsi
 Repositori ini berisi penyelesaian tahap pertama untuk **Seleksi Sister 2025 — Bagian B**.
@@ -12,7 +12,7 @@ Seluruh solusi berfokus pada implementasi fungsi sesuai ketentuan masing-masing 
 ├── Soal 3/
 ├── Soal 4/
 ├── Soal 5/
-├── Soal 6/    ← Belum dikerjakan
+├── Soal 6/
 ├── Soal 8/
 └── README.md 
 ```
@@ -22,4 +22,4 @@ Seluruh solusi berfokus pada implementasi fungsi sesuai ketentuan masing-masing 
 
 ## Catatan
 - Jawaban difokuskan untuk memenuhi spesifikasi wajib terlebih dahulu.
-- Soal 6 **belum dikerjakan** pada rilis ini.
+- Soal 6 dikerjakan pada rilis ini, namun masih belum sempurna.
