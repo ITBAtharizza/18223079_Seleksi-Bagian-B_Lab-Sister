@@ -90,13 +90,13 @@ void write_clusters(const void *ptr, uint32_t cluster_number, uint8_t cluster_co
 
 void read_clusters(void *ptr, uint32_t cluster_number, uint8_t cluster_count);
 
-int8_t read_directory(struct FAT32DriverRequest request);
+int8_t read_directory(struct FAT32DriverRequest *request);
 
-int8_t read(struct FAT32DriverRequest request);
+int8_t read(struct FAT32DriverRequest *request);
 
-int8_t write(struct FAT32DriverRequest request);
+int8_t write(struct FAT32DriverRequest *request);
 
-int8_t delete(struct FAT32DriverRequest request);
+int8_t delete(struct FAT32DriverRequest *request);
 
 bool cmp_string_with_fixed_length(const char *a, const char *b, int l);
 

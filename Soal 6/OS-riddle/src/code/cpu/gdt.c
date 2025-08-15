@@ -105,7 +105,7 @@ struct GDTR _gdt_gdtr = {
 // Function to set the base address of the TSS descriptor at runtime
 void gdt_install_tss(void) {
     uint32_t base = (uint32_t) &_interrupt_tss_entry;
-    global_descriptor_table.table[5].base_high = (base >> 24) & 0xFF;
-    global_descriptor_table.table[5].base_mid  = (base >> 16) & 0xFF;
+    global_descriptor_table.table[5].base_high = (base & (0xFF << 24)) >> 24;
+    global_descriptor_table.table[5].base_mid  = (base & (0xFF << 16)) >> 16;
     global_descriptor_table.table[5].base_low  = base & 0xFFFF;
 }

@@ -55,7 +55,7 @@ $(OUTPUT_FOLDER)/%.o: $(SOURCE_FOLDER_ASM)/%.s
 #prerequisites
 prereq = $(OBJS) $(OBJS_STDLIB) $(OBJS_KERNEL) $(ASM_OBJS)  
 #main
-run: all
+run: all disk
 	@qemu-system-i386 -s -S -drive file=$(OUTPUT_FOLDER)/storage.bin,format=raw,if=ide,index=0,media=disk -cdrom $(OUTPUT_FOLDER)/$(ISO_NAME).iso 
 all: build
 build: iso
